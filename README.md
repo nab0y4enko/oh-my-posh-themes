@@ -8,4 +8,4 @@ I used examples from the official [oh-my-posh repository](https://github.com/Jan
 
 ## Theme
 
-- **agnosterplus.omp.json** - A powerline-style theme based on the agnosterplus theme from the official oh-my-posh themes collection.
+- **agnoster-by-nab0y4enko.omp.json** - A powerline-style theme based on the agnosterplus theme from the official oh-my-posh themes collection.

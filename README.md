@@ -10,26 +10,6 @@ This repository contains personally crafted themes that enhance your terminal ex
 
 I created these themes using examples and inspiration from the official [oh-my-posh repository](https://github.com/JanDeDobbeleer/oh-my-posh), customizing them to provide a clean, informative, and visually appealing terminal experience.
 
-## Themes
-
-### agnoster-by-nab0y4enko.omp.json
-
-A modern powerline-style theme inspired by the agnosterplus theme from the official oh-my-posh collection.
-
-**Features:**
-- 🕒 **Time display**: Shows current time in the right prompt (24-hour format)
-- 👤 **User session**: Displays current user with clean white background
-- 📁 **Smart path**: Agnoster-style path display with folder icons and separators
-- 🌿 **Git integration**: Shows current branch with distinct styling
-- ⚡ **Powerline symbols**: Uses beautiful Unicode symbols for seamless segment transitions
-- 🎨 **Color coded**: Different background colors for easy visual distinction
-
-**Color Scheme:**
-- User session: White background with dark text
-- Path: Light blue background for easy readability
-- Git branch: Light green background indicating repository status
-- Time: Blue text in right prompt
-
 ## Installation & Usage
 
 ### Remote Installation (Recommended)
@@ -40,20 +20,6 @@ You can use this theme remotely without downloading it locally. This method auto
 
 ```bash
 eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/nab0y4enko/oh-my-posh-themes/main/agnoster-by-nab0y4enko.omp.json')"
-```
-
-#### For other shells
-
-Replace `zsh` with your shell name:
-
-- **Bash**: `bash`
-- **Fish**: `fish` 
-- **PowerShell**: `pwsh`
-- **Cmd**: `cmd`
-
-Example for PowerShell:
-```powershell
-oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/nab0y4enko/oh-my-posh-themes/main/agnoster-by-nab0y4enko.omp.json' | Invoke-Expression
 ```
 
 ### Local Installation
@@ -88,7 +54,7 @@ A [Nerd Font](https://www.nerdfonts.com/) is required for proper symbol renderin
 oh-my-posh font install
 ```
 
-**Recommended fonts:** FiraCode Nerd Font, JetBrains Mono Nerd Font, MesloLGM Nerd Font
+**Recommended fonts:** MesloLGM Nerd Font, FiraCode Nerd Font, JetBrains Mono Nerd Font
 
 #### Font Configuration
 
@@ -110,43 +76,3 @@ osascript -e 'tell application "Terminal" to set font of settings set "Basic" to
 ```
 
 For more information on configuration, see the [oh-my-posh documentation](https://ohmyposh.dev/docs/configuration/general).
-
-## Screenshots
-
-*Screenshots will be added soon to showcase the theme in action.*
-
-## Customization
-
-The theme is designed to be easily customizable. You can modify the following aspects:
-
-- **Colors**: Change the `background` and `foreground` properties in the JSON file
-- **Symbols**: Update the `powerline_symbol`, `folder_icon`, or other icon properties
-- **Time format**: Modify the `time_format` property (default: "15:04:05" for 24-hour format)
-- **Path style**: Adjust the `style` property in the path segment
-
-To customize, download the theme file locally and edit it according to your preferences.
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or find any issues:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-This project is open source. Feel free to use, modify, and distribute these themes.
-
-## Support
-
-If you encounter any issues or have questions:
-
-- Check the [oh-my-posh documentation](https://ohmyposh.dev/docs/)
-- Open an issue in this repository
-- Make sure you have a compatible Nerd Font installed
-
----
-
-**Enjoy your enhanced terminal experience!** 🚀

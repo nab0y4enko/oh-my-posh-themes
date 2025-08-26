@@ -70,8 +70,44 @@ oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/nab0y4enko/oh-m
 
 ### Prerequisites
 
-- [oh-my-posh](https://ohmyposh.dev/docs/installation) installed on your system
-- A [Nerd Font](https://www.nerdfonts.com/) for proper symbol rendering (recommended: FiraCode Nerd Font, JetBrains Mono Nerd Font)
+#### Installing oh-my-posh
+
+**macOS (Homebrew):**
+```bash
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+```
+
+**Other platforms:** See the [oh-my-posh installation guide](https://ohmyposh.dev/docs/installation)
+
+#### Installing Fonts
+
+A [Nerd Font](https://www.nerdfonts.com/) is required for proper symbol rendering.
+
+**Install using oh-my-posh (recommended):**
+```bash
+oh-my-posh font install
+```
+
+**Recommended fonts:** FiraCode Nerd Font, JetBrains Mono Nerd Font, MesloLGM Nerd Font
+
+#### Font Configuration
+
+**Visual Studio Code:**
+Add to your settings.json:
+```json
+{
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font"
+}
+```
+
+**macOS Terminal:**
+```bash
+# For Pro profile
+osascript -e 'tell application "Terminal" to set font of settings set "Pro" to "MesloLGL Nerd Font Mono"'
+
+# For Basic profile  
+osascript -e 'tell application "Terminal" to set font of settings set "Basic" to "MesloLGL Nerd Font Mono"'
+```
 
 For more information on configuration, see the [oh-my-posh documentation](https://ohmyposh.dev/docs/configuration/general).
 
